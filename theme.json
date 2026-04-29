@@ -1,0 +1,128 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1060px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "palette": [
+        { "slug": "navy",   "color": "#0d1e4d", "name": "Navy" },
+        { "slug": "blue",   "color": "#1a3a9e", "name": "Blue" },
+        { "slug": "yellow", "color": "#f5c800", "name": "Yellow" },
+        { "slug": "green",  "color": "#2d7a3a", "name": "Green" },
+        { "slug": "white",  "color": "#ffffff", "name": "White" },
+        { "slug": "gray",   "color": "#f4f4f4", "name": "Gray" },
+        { "slug": "muted",  "color": "#555555", "name": "Muted" },
+        { "slug": "border", "color": "#e0e0e0", "name": "Border" }
+      ],
+      "defaultPalette": false,
+      "defaultGradients": false
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Barlow Condensed', sans-serif",
+          "slug": "barlow-condensed",
+          "name": "Barlow Condensed",
+          "fontFace": [
+            {
+              "fontFamily": "Barlow Condensed",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "src": ["https://fonts.gstatic.com/s/barlowcondensed/v12/HTxxL3I-JCGChYJ8VI-L6OO_au7B43LT31nFpg.woff2"]
+            },
+            {
+              "fontFamily": "Barlow Condensed",
+              "fontWeight": "800",
+              "fontStyle": "normal",
+              "src": ["https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B6xTru1H2lg.woff2"]
+            },
+            {
+              "fontFamily": "Barlow Condensed",
+              "fontWeight": "900",
+              "fontStyle": "normal",
+              "src": ["https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B62TTu1H2lg.woff2"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "'Barlow', sans-serif",
+          "slug": "barlow",
+          "name": "Barlow",
+          "fontFace": [
+            {
+              "fontFamily": "Barlow",
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "src": ["https://fonts.gstatic.com/s/barlow/v12/7cHpv4kjgoGqM7E3_-gc4FAtlT47dw.woff2"]
+            },
+            {
+              "fontFamily": "Barlow",
+              "fontWeight": "600",
+              "fontStyle": "normal",
+              "src": ["https://fonts.gstatic.com/s/barlow/v12/7cHsv4kjgoGqM7E3p-gc4FAtlT47dw.woff2"]
+            },
+            {
+              "fontFamily": "Barlow",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "src": ["https://fonts.gstatic.com/s/barlow/v12/7cHsv4kjgoGqM7E3b-gc4FAtlT47dw.woff2"]
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        { "slug": "xs",       "size": "11px",                    "name": "Extra Small" },
+        { "slug": "small",    "size": "13px",                    "name": "Small" },
+        { "slug": "medium",   "size": "16px",                    "name": "Medium" },
+        { "slug": "large",    "size": "20px",                    "name": "Large" },
+        { "slug": "x-large",  "size": "clamp(28px, 3.5vw, 44px)", "name": "Extra Large" },
+        { "slug": "xx-large", "size": "clamp(42px, 5vw, 68px)",   "name": "2X Large" }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "em", "rem", "%", "vw"]
+    },
+    "useRootPaddingAwareAlignments": true
+  },
+  "styles": {
+    "color": {
+      "background": "#ffffff",
+      "text": "#222222"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--barlow)",
+      "fontSize": "var(--wp--preset--font-size--medium)",
+      "lineHeight": "1.6"
+    },
+    "spacing": {
+      "padding": {
+        "left": "0px",
+        "right": "0px"
+      }
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--barlow-condensed)",
+          "fontWeight": "900",
+          "lineHeight": "1.05"
+        },
+        "color": {
+          "text": "#0d1e4d"
+        }
+      },
+      "link": {
+        "color": { "text": "#0d1e4d" },
+        ":hover": { "color": { "text": "#1a3a9e" } }
+      }
+    }
+  },
+  "templateParts": [
+    { "name": "header", "title": "Header", "area": "header" },
+    { "name": "footer", "title": "Footer", "area": "footer" }
+  ]
+}
