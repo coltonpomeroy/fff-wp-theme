@@ -9,12 +9,14 @@ $logo = esc_url( get_theme_file_uri( 'assets/images/logo.png' ) );
 $year = date( 'Y' );
 ?>
 <!-- wp:html -->
-<section class="fff-footer-cta">
-  <div class="fff-footer-cta-text">
-    <h2>Ready to <em>Take Your Shot?</em></h2>
-    <p>Join thousands of players and start scoring.</p>
+<section class="fff-footer-cta-wrap">
+  <div class="fff-footer-cta">
+    <div class="fff-footer-cta-text">
+      <h2>Ready to <span>Take Your Shot?</span></h2>
+      <p>Join thousands of players and start scoring.</p>
+    </div>
+    <a href="https://app.freeflickfootball.com" class="fff-btn-yellow">Play Free Now</a>
   </div>
-  <a href="https://app.freeflickfootball.com" class="fff-btn-yellow">Play Free Now</a>
 </section>
 
 <footer class="fff-footer">
@@ -28,7 +30,7 @@ $year = date( 'Y' );
       <div class="fff-footer-col">
         <h4>Play</h4>
         <ul>
-          <li><a href="https://app.freeflickfootball.com">Play</a></li>
+          <li><a href="https://app.freeflickfootball.com">Play Now</a></li>
           <li><a href="#how-to-play">How to Play</a></li>
           <li><a href="https://app.freeflickfootball.com/blog">Blog</a></li>
           <li><a href="https://app.freeflickfootball.com/blog">Updates</a></li>
