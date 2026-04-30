@@ -52,7 +52,7 @@ function fff_enqueue_assets() {
 		'fff-custom',
 		get_theme_file_uri( 'assets/css/custom.css' ),
 		[],
-		wp_get_theme()->get( 'Version' )
+		(string) filemtime( get_theme_file_path( 'assets/css/custom.css' ) )
 	);
 }
 add_action( 'wp_enqueue_scripts', 'fff_enqueue_assets' );
