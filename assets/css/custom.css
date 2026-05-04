@@ -309,18 +309,28 @@ h1, h2, h3 {
   border: 2px solid #35b72a; color: #35b72a;
   border-radius: 50%; font-size: 12px; font-weight: 800;
 }
-.fff-video-placeholder {
-  min-height: 280px; border: 1px solid #aeb5bf; border-radius: 6px;
-  background:
-    linear-gradient(to top right, transparent calc(50% - 1px), #c2c8d0 50%, transparent calc(50% + 1px)),
-    linear-gradient(to bottom right, transparent calc(50% - 1px), #c2c8d0 50%, transparent calc(50% + 1px)),
-    #edf0f3;
-  display: grid; place-items: center;
+.fff-gameplay-screenshot {
+  position: relative; display: block; text-decoration: none;
+  border: 1px solid #aeb5bf; border-radius: 6px; overflow: hidden;
+  min-height: 280px;
+}
+.fff-gameplay-img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  min-height: 280px;
 }
 .fff-video-play {
+  position: absolute; inset: 0; margin: auto;
   width: 84px; height: 84px; border-radius: 50%;
-  background: #767a80; display: grid; place-items: center;
-  color: white; font-size: 34px; text-decoration: none;
+  background: rgba(0,0,0,0.55); backdrop-filter: blur(4px);
+  display: grid; place-items: center;
+  pointer-events: none;
+}
+.fff-video-play::after {
+  content: '';
+  border-style: solid;
+  border-width: 14px 0 14px 26px;
+  border-color: transparent transparent transparent #fff;
+  margin-left: 5px;
 }
 
 /* ── HOW TO PLAY ── */
@@ -364,12 +374,14 @@ h1, h2, h3 {
 }
 .fff-blog-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.08); transform: translateY(-3px); }
 .fff-blog-thumb {
-  height: 100px; border-bottom: 1px solid var(--fff-line);
-  background:
-    linear-gradient(to top right, transparent calc(50% - 1px), #c2c8d0 50%, transparent calc(50% + 1px)),
-    linear-gradient(to bottom right, transparent calc(50% - 1px), #c2c8d0 50%, transparent calc(50% + 1px)),
-    #edf0f3;
+  height: 160px; border-bottom: 1px solid var(--fff-line);
+  overflow: hidden;
 }
+.fff-blog-thumb img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.4s ease;
+}
+.fff-blog-card:hover .fff-blog-thumb img { transform: scale(1.04); }
 .fff-blog-card-body { padding: 14px 16px 16px; }
 .fff-blog-card-body h3 { font-size: 22px; line-height: 1; margin-bottom: 7px; }
 .fff-blog-card-body p { margin: 0 0 10px; color: #344054; font-size: 15px; line-height: 1.35; }
